@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Program | Desenvolvimento de Software Sob Medida</title>
+    <meta name="description" content="A SimpleSoft cria soluções digitais sob medida, rápidas e acessíveis para empresas e startups.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" alt="Logo Simple Program" style="height: 75px;">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Transforme suas ideias em software sob medida</h1>
+        <p>A Simple Program cria soluções digitais rápidas, seguras e acessíveis para empresas e startups que desejam crescer com tecnologia.</p>
+        <button onclick="document.getElementById('leadForm').scrollIntoView({behavior:'smooth'})">🚀 Quero meu projeto</button>
+    </section>
+
+    <!-- Problema -->
+    <section id="sobre">
+        <h2 class="section-title">O Problema</h2>
+        <div class="content">
+            <p>Pequenas e médias empresas enfrentam dificuldades para digitalizar seus processos. Falta de equipe técnica, altos custos e soluções genéricas limitam seu crescimento. A Simple Program resolve esse problema com tecnologia sob medida, acessível e moderna.</p>
+        </div>
+    </section>
+
+    <!-- Solução -->
+    <section id="solucoes">
+        <h2 class="section-title">Nossa Solução</h2>
+        <div class="content">
+            <p>Desenvolvemos sistemas personalizados com tecnologias de ponta (.NET, Angular, Azure e AWS), aplicando metodologias ágeis que garantem entregas rápidas e alta performance.</p>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2343/2343693.png" alt="Agilidade">
+                    <h3>Agilidade</h3>
+                    <p>Entregas rápidas e revisões constantes com o cliente.</p>
+                </div>
+                <div class="feature">
+                    <img src="https://cdn-icons-png.flaticon.com/512/633/633652.png" alt="Custo acessível">
+                    <h3>Custo Acessível</h3>
+                    <p>Planos flexíveis e adaptados ao tamanho do seu negócio.</p>
+                </div>
+                <div class="feature">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Suporte">
+                    <h3>Suporte Contínuo</h3>
+                    <p>Acompanhamento técnico e evolutivo após a entrega.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="cta" id="contato">
+        <h2>Pronto para transformar sua ideia em um software real?</h2>
+        <p>Preencha o formulário abaixo e receba uma análise gratuita do seu projeto em até 48h.</p>
+
+        <form id="leadForm" onsubmit="handleSubmit(event)">
+            <input type="text" id="nome" placeholder="Seu nome completo" required>
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <textarea id="mensagem" rows="4" placeholder="Descreva brevemente sua ideia"></textarea>
+            <button type="submit">🚀 Enviar minha ideia</button>
+        </form>
+        <p id="feedback" style="display:none; font-weight:bold;">✅ Obrigado! Recebemos sua ideia e entraremos em contato em breve.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Simple Program © 2025 — Desenvolvimento de Software Sob Medida | São Paulo - SP  
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
